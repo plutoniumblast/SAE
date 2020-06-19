@@ -21,23 +21,25 @@ section {
 	width: 100vw;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(9, 1fr);
-	scroll-snap-align: start
+	grid-template-rows: repeat(7, 1fr);
+      scroll-snap-align: start;
+      overflow-x: hidden;
 }
 
 nav {
-      z-index: 2;
+      z-index: 5;
 	width: 100%;
       height: 50px;
-      background-color: rgba(0, 0, 0, 0.5);
-	position: fixed;
+      position: fixed;
 }
     
     .nav {
+      backdrop-filter: blur(2em);
+      -webkit-backdrop-filter: blur(2em);
       height: 50px;
       width: 100%;
-      background-color: #4d4d4d;
-      position: relative;
+      background-color: rgba(0, 0, 0, 0.1);
+      position: fixed;
     }
     
     .nav > .nav-header {
@@ -125,9 +127,46 @@ nav {
 /* LANDING */
 
 .aftermovie {
+      grid-row: 1/7;
+      grid-column: 1/12;
       z-index: 1;
       right: 0;
       bottom: 0;
-      min-width: 100vw; 
-      min-height: 100%;
+      min-width: 99vw; 
+      min-height: 100vh;
+      overflow-x: hidden;
+}
+
+.onvid {
+      text-align: center;
+      font-weight: bold;
+      align-items: center;
+      text-shadow: 0 0 0.5em black;
+      color: #fff;
+      z-index: 2;
+}
+
+.title {
+      font-size: 6em;
+      grid-row: 4;
+      grid-column: 2/12;
+}
+
+.subtitle {
+      font-size: 3em;
+      grid-row: 5;
+      grid-column: 2/12;
+}
+
+.about {
+      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("https://universe.bits-pilani.ac.in/Uploads/Goa/goamechanicalengineeringadmin/Microsections/2018-4-11--1-23-1-89_21314603_1408792549237243_3320008125616975328_n.jpg");
+      background-size:cover;
+}
+.hometext {
+      color: white;
+      justify-content: center;
+      font-size: 1.5em;
+      text-shadow: 0 0 1em black;
+      grid-column: 2/12;
+      grid-row: 3;
 }
