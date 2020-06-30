@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    
+}
+body{
+   background-image: url(html-color-codes-color-tutorials-hero-00e10b1f.jpg);
+}
+#mainheader
+{
+    background-color: coral;
+    color: white;
+    border-color: black;
+    font-size:xx-large;
+    font-weight: bold;
+    border: 5px black solid;
+}
+#mainheader img{
+    float: right;
+     max-height: 160px;
+     min-width: 200px;
+}
+
+.car1{
+text-align: center;
+}
+.car1 img{
+    float: left;
+    margin-right: 15px;
+    max-height: 50%;
+}
+
+.car1 h2{
+    background-color: rgb(76, 0, 255);
+font-size: xx-large;
+color:yellow ;
+border: 3px black solid;
+}
+.car1 h1{
+font-size: x-large;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+text-align: center;
+text-decoration: underline;
+}
+.car1 p{
+font-size: large;
+color: white;
+margin-right: 10px;
+margin-left: 5px;
+}
+
