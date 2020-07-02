@@ -3,6 +3,17 @@
       background-size: cover;
 }
 
+.midbox {
+      text-align: center;
+      font-weight: bold;
+      align-items: center;
+      color: #fff;
+      z-index: 2;
+      font-size: 8em;
+      grid-row: 4;
+      grid-column: 2/12;
+}
+
 .ontext{
       background: linear-gradient(to bottom, rgba(200,10,10,0), rgb(255, 255, 0)),url('../assets/firepolygons.jpg');
        background-attachment: fixed;
@@ -10,12 +21,59 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
-      text-align: center;
-      font-weight: bold;
-      align-items: center;
-      color: #fff;
-      z-index: 2;
-      font-size: 12em;
-      grid-row: 5;
-      grid-column: 2/12;
 }
+
+.text {
+      position: relative;
+      top: -3.5em;
+      left: -4.1em;
+      font-size: 1.1em;
+      z-index: 2;
+    }
+    .word {
+      position: absolute;
+      opacity: 0;
+    }
+    
+    .letter {
+      display: inline-block;
+      position: relative;
+      transform: translateZ(25px);
+      transform-origin: 50% 50% 25px;
+    }
+    
+    .letter.out {
+      transform: rotateX(90deg);
+      transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    
+    .letter.behind {
+      transform: rotateX(-90deg);
+    }
+    
+    .letter.in {
+      transform: rotateX(0deg);
+      transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .wisteria {
+      color: #8e44ad;
+    }
+    
+    .belize {
+      color: #2980b9;
+    }
+    
+    .pomegranate {
+      color: #c0392b;
+    }
+    
+    .green {
+      color: #16a085;
+    }
+    
+    .midnight {
+      color: #2c3e50;
+    }
+    
+    
