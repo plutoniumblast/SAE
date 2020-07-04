@@ -1,10 +1,6 @@
 document.getElementById( 'nav' ).innerHTML = `
 <link rel="stylesheet" href="./css/nav.css">
-<input type="checkbox" id="nav-check">
-<div class="nav-header">
-      <a href="./index.html" class="nav-title" style="top: -1.25em;"><img src="./assets/logo.png" alt=""
-                  width="60%"></a>
-</div>
+<input type="checkbox" id="nav-check" style="display: none;">
 <div class="nav-btn">
       <label for="nav-check">
             <span></span>
@@ -14,7 +10,7 @@ document.getElementById( 'nav' ).innerHTML = `
 </div>
 
 <div class="nav-links">
-      <a href="./about.html" target="_blank">About Us</a>
+      <a href="./index.html" target="_blank">Home</a>
       <a href="./sponsors.html" target="_blank">Sponsors</a>
       <a href="./alumni.html" target="_blank">Alumni</a>
       <a href="./cars.html" target="_blank">Our Cars</a>
