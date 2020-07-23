@@ -3,9 +3,7 @@ document.getElementById( 'nav' ).innerHTML = `
 <input type="checkbox" id="nav-check" style="display: none;">
 <div class="nav-btn">
       <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
+            <img src="https://img.icons8.com/ios/50/000000/steering-wheel.png" style="filter: invert(100%);"/>
       </label>
 </div>
 

@@ -77,19 +77,19 @@ nav {
 	height: 3.5em;
 	width: 3.5em;
 	border-radius: 1.75em;
-	background-color: rgba(10, 132, 255, 1);
+	background-color: rgba(255, 60, 20, 0.5);
 	position: fixed;
 }
 
 .nav:hover {
-	background-color: rgba(0, 122, 255, 1);
+	background-color: rgb(255, 60, 0);
 }
 
 .nav>.nav-btn {
 	display: block;
 	position: absolute;
-	right: 0.25em;
-	top: 0.25em;
+	right: 1.01em;
+	top: -0.66em;
 }
 
 .nav>.nav-btn>label {

@@ -1,3 +1,36 @@
+.landing {
+      background: url('../assets/bg2.jpg') no-repeat center fixed;
+      background-size: cover;
+}
+
+.midbox {
+      text-align: center;
+      font-weight: bold;
+      align-items: center;
+      color: #fff;
+      z-index: 2;
+      font-size: 8em;
+      grid-row: 5;
+      grid-column: 2/12;
+}
+
+.ontext{
+      background: linear-gradient(to bottom, rgba(200,10,10,0), rgb(255, 255, 0)),url('../assets/firepolygons.jpg');
+      background-attachment: fixed;
+      background-size: contain;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+}
+
+.text {
+      position: relative;
+      top: -3.5em;
+      left: -4.1em;
+      font-size: 1.1em;
+      z-index: 2;
+}
+
 section:first-of-type {
       padding-top: 5em;
 }
