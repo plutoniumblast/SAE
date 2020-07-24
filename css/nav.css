@@ -13,8 +13,6 @@ body {color: white;
 	box-sizing: border-box;
 	font-weight: 100;
 	position: relative;
-	overflow-y: scroll;
-	scroll-snap-type: y mandatory
 }
 
 a {color: #fff;
@@ -39,11 +37,9 @@ a:hover:after {width: 100%;left: 0;}
 
 section {z-index: 1;
 	height: 100vh;
-	width: 100vw;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(7, 1fr);
-	scroll-snap-align: start;
 	overflow-x: hidden;
 }
 
