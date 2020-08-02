@@ -126,3 +126,29 @@ nav {
     left: -17vw;
   }
 }
+
+.sidenav {
+	width: 130px;
+	position: fixed;
+	z-index: 2;
+	top: 240px;
+	left: 0px;
+	background: #213245;
+	overflow-x: hidden;
+	padding: 8px 0;
+  }
+  
+  .sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	color: #2196F3;
+	display: block;
+  }
+  
+  .sidenav a:hover {
+	color: #ffff;
+	font-weight: 200;
+	font-size: 30px;
+  }
