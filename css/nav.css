@@ -45,14 +45,13 @@ top: 1%;
 left: 90%;
 position: fixed;
 }
-.nav:hover {box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.75);}
 .nav {height: 3.5em;
 width: 3.5em;
 border-radius: 1.75em;
-background-color: rgba(255, 165, 0, 0.5);
+background-color: rgba(255, 165, 0, 0.75);
 position: fixed;
 }
-.nav:hover {background-color: orange;}
+.nav:hover {background-color: orange;transition: all 0.3s;}
 @keyframes steering {0% {transform: rotate(30deg);}50% {transform: rotate(-30deg);}100% {transform: rotate(30deg);}}
 .golgol {animation: steering 3s ease infinite;}.golgol:hover {animation: none;}
 .nav>.nav-btn {display: block;
@@ -82,7 +81,7 @@ width: 100%;
 .nav>.nav-links {position: fixed;
 display: block;
 width: 100vw;
-background-color: rgba(0, 0, 0, 0.9);
+background-color: rgba(0, 0, 0, 0.25);
 backdrop-filter: blur(1em);
 -webkit-backdrop-filter: blur(1em);
 height: 0px;
@@ -117,11 +116,10 @@ color: #ffff;
 }
 @media (min-width:768px) {
 .nav>.nav-links {
-box-shadow: 0 0 0.2em white;
 width: 25vw;
-border-radius: 1em;
+border-radius: 0.25em;
 position: absolute;
-left: -17vw;
+left: -18vw;
 }
 }
 @media (max-width:991px) {
