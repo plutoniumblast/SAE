@@ -1,119 +1,54 @@
 <html>
 
 <head>
-    <title>
-        SAE
-    </title>
+    <title>SAE</title>
+    <script async src="./js/nav.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/contact.css">
 </head>
-<link rel="stylesheet" type="text/css" href="./SAE2.css">
 
 <body>
-    <div class="header" id="saeimg">
-        <img src="bits.png">
-        <img src="saelogo.jpg">
-        <div class="image2">
-        </div>
-        <div class="insideheader">
-            <div class="infocontainer">
-                <h1>
-                    CONTACT <span>US</span>
-                </h1>
+    <nav id="nav" class="nav"></nav>
+    <section class="contactCont">
+        <div class="lhs">
+            <h1>Our Team</h1>
+            <br>
+            <h3 style="width: 100%">Baja</h3>
+            <div>
+                <div><img src="./assets/sieg1.jpg" alt=""> <br>Vladamir Putin <br>Prez</div>
+                <div><img src="./assets/sieg2.jpg" alt=""> <br>Vladamir Putin <br>Prez</div>
+                <div><img src="./assets/team1.jpg" alt=""> <br>Vladamir Putin <br>Prez</div>
             </div>
-        </div>
-    </div>
-
-    <div class="sidenav">
-        <a href="./cars.html#1">SEIG 1.0</a>
-        <a href="./cars.html#2">SEIG 2.0</a>
-        <a href="./cars.html#3">BAJA</a>
-        <a href="./cars.html#4">SUPRA</a>
-        <a href=./cars.html#5">AERO</a>
-    </div>
-    
-    <div class="contactinfo">
-        <h1>
-            OUR TEAM:
-        </h1>
-    </div>
-    <div class="container">
-        <div class="Putin">
-            <p>
-                Dhyaan Patel (SAE coordinator, SUPRA)<br>
-                E-mail:xyz3@gmail.com<br>
-                Whatsapp:9999999999</p>
-            <img src="car1.jpg" height="200px" width="300px">
+            <br>
+            <h3 style="width: 100%">Baja</h3>
+            <div>
+                <div><img src="./assets/sieg1.jpg" alt=""> <br>Vladamir Putin <br>Prez</div>
+                <div><img src="./assets/sieg2.jpg" alt=""> <br>Vladamir Putin <br>Prez</div>
+                <div><img src="./assets/team1.jpg" alt=""> <br>Vladamir Putin <br>Prez</div>
+            </div>
+            <br>
+            <h3 style="width: 100%">Baja</h3>
+            <div>
+                <div><img src="./assets/sieg1.jpg" alt=""> <br>Vladamir Putin <br>Prez</div>
+                <div><img src="./assets/sieg2.jpg" alt=""> <br>Vladamir Putin <br>Prez</div>
+                <div><img src="./assets/team1.jpg" alt=""> <br>Vladamir Putin <br>Prez</div>
+            </div>
 
         </div>
-        <div class="Putin">
-            <p>Vladimir Putin (SAE sub-coordinator, SUPRA)<br>
-                E-mail:xyz3@gmail.com<br>
-                Whatsapp:9999999999</p>
-            <img src="putin.jpg" height="200px" width="300px">
-
-
-        </div>
-        <div class="Putin">
-            <p>Lionel Messi (SAE chairperson, SUPRA)<br>
-                E-mail:xyz3@gmail.com<br>
-                Whatsapp:9999999999</p>
-            <img src="car1.jpg" height="200px" width="300px">
-
-        </div>
-        <div class="Messi">
-            <p>Hemang Patel (SAE secratory, SUPRA)<br>
-                E-mail:xyz3@gmail.com<br>
-                Whatsapp:9999999999</p>
-            <img src="putin.jpg" height="200px" width="300px">
-
-        </div>
-        <div class="Messi">
-            <p> Manav CSA (Captain, Baja)<br>
-                E-mail:xyz3@gmail.com<br>
-                Whatsapp:9999999999</p>
-            <img src="car1.jpg" height="200px" width="300px">
-
-        </div>
-        <div class="Messi">
-            <p>Tera Baap(Captain, Aero)<br>
-                E-mail:xyz3@gmail.com<br>
-                Whatsapp:9999999999</p>
-            <img src="putin.jpg" height="200px" width="300px">
-
-        </div>
-    </div>
-
-    <div class="contactform">
-        <h1>CONTACT-<span>FORM</span></h1>
-        <p>
-        <h3> Write us about any query or feedback, We'll answer you shortly</h3>
-        </p>
-        <div class="container2">
-            <form><b>
-
-                    <label for="fname">NAME</label>
-                    <input type="text" id="fname" name="firstname" placeholder="eg:Vladimir Putin">
-
-                    <label for="email">E-MAIL</label>
-                    <input type="email" id="mail" name="email" placeholder="eg:putinmafia@gmail.com">
-
-                    <label for="contactbranch">CONTACT-BRANCH</label>
-                    <select id="contactbranch" name="contactbranch">
-                        <option value="Supra">Supra</option>
-                        <option value="Baja">Baja</option>
-                        <option value="Aero">Aero</option>
-                    </select>
-
-                    <label for="subject">WRITE TO US</label>
-                    <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
-
-                    <input type="submit" value="Submit">
-                </b>
+        <div class="rhs">
+            <form>
+                <h2>Message</h2>
+                <input type="text" id="nameIn" name="name" placeholder="Name">
+                <input type="email" id="mailIn" name="email" placeholder="Email">
+                <select id="branchIn" label="Branch" name="contactbranch">
+                    <option value="supra">Supra</option>
+                    <option value="baja">Baja</option>
+                    <option value="aero">Aero</option>
+                </select>
+                <textarea id="msgIn" name="msg" label="Message" style="height:200px"></textarea>
+                <button id="submit">Submit</button>
             </form>
-            <div class="logoimg">
-                <img src="SAE-Logo.jpg" width="500px" height="300px">
-            </div>
         </div>
-
+    </section>
 </body>
 
 </html>
