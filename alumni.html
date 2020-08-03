@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+=======
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="./css/alumni.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+>>>>>>> Frk update
 
 <head>
   <meta charset="UTF-8" />
@@ -7,6 +18,7 @@
   <link rel="stylesheet" href="./css/alumni.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+<<<<<<< HEAD
   <script async defer src="./js/nav.js"></script>
   <script async src="./js/alum.js"></script>
 
@@ -20,3 +32,106 @@
 </body>
 
 </html>
+=======
+  <body>
+    <script>
+      function flip(event) {
+        var element = event.currentTarget;
+        if (element.className === 'card') {
+          if (element.style.transform == 'rotateY(180deg)') {
+            element.style.transform = 'rotateY(0deg)';
+          } else {
+            element.style.transform = 'rotateY(180deg)';
+          }
+        }
+      }
+    </script>
+
+    <nav id="nav" class="nav"></nav>
+    <div class="container">
+      <div class="card-container card1">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <img src="./assets/Ford1.png" alt="" />
+          </div>
+          <div class="back"></div>
+        </div>
+      </div>
+
+      <div class="card-container card2">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <img src="./assets/Tesla.png" alt="" />
+          </div>
+          <div class="back">
+            <p>This is the back</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <p>BMW</p>
+          </div>
+          <div class="back">
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <p>Mercedes-Benz</p>
+          </div>
+          <div class="back">
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <p>Volvo</p>
+          </div>
+          <div class="back">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <p>Audi</p>
+          </div>
+          <div class="back">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <p>Porsche</p>
+          </div>
+          <div class="back">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <p>Ford</p>
+          </div>
+          <div class="back">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+>>>>>>> Frk update
