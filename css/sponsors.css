@@ -1,12 +1,32 @@
-section:first-of-type {
-      padding-top: 5em;
+.aftermovie {
+grid-row: 1/7;
+grid-column: 1/12;
+z-index: 1;
+right: 0;
+bottom: 0;
+min-width: 99vw; 
+min-height: 100vh;
+overflow-x: hidden;
 }
-
-box {
-      transition: all 0.5s ease;
-      filter: invert();
+.onvid {
+text-align: center;
+font-weight: bold;
+align-items: center;
+text-shadow: 0 0 0.5em black;
+z-index: 2;
 }
-box:hover {
-      transition: all 0.5s ease;
-      filter: none;
+.title {
+font-size: 6em;
+grid-row: 4;
+grid-column: 2/12;
+}
+.subtitle {
+font-size: 3em;
+grid-row: 5;
+grid-column: 2/12;
+}
+.flex {
+      width: 100%;
+display: flex;
+flex-wrap: wrap;
 }

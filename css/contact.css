@@ -1,0 +1,58 @@
+.contactCont{
+display: flex;
+font-size: 2em;
+}
+.contactCont > div {
+padding: 1em;
+width: 50%;
+display: flex;
+align-items: center;
+margin: 0 auto;
+text-align: center;
+}
+input, select, textarea {
+width: 100%;
+height: 6em;
+padding: 0.5em;
+outline: 0;
+border: 0;
+border-radius: 0.25em;
+margin: 0.5em 0;
+}
+.lhs{
+padding-top: 10% !important;
+height: 100vh;
+overflow-y: scroll;
+display: block !important;
+background-color: orange;
+}
+.lhs > div{
+width: 100%;
+margin: 0 auto;
+display: flex;
+}
+.lhs img{
+object-fit: cover;
+width: 5em;
+height: 5em;
+border-radius: 2.5em;
+}
+#submit {
+font-size: 0.5em;
+width: 100%;
+padding: 1em;
+color: white;
+background-color: orange;
+outline: 0;
+border: 0;
+border-radius: 0.25em;
+}
+#submit:hover{
+box-shadow: 0 0 3px 1px white;
+cursor: pointer;
+}
+@media (max-width:991) {
+.contactCont > div {
+width: 100%;
+}
+}

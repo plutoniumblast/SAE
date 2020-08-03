@@ -77,27 +77,86 @@ color: #2c3e50;
 }
 
 .SEIG1 img {
-      grid-column: 0/3;
+      border: 2px solid #ffff;
       float: left;
+      width: 450px;
+      height: auto;
+      left: 10px;
+      padding: 2px;
+      grid-column: 2/3;
 }
 
 .SEIG1 p {
       font-size: 1.2em;
       line-height: 1.2em;
       text-align: justify;
-      grid-column: 3/12;
-      float: right;
-}
-
-.SEIG2 img {
-      grid-column: 9/12;
-      float: right;
+      grid-column: 4/12;
 }
 
 .SEIG2 p {
       font-size: 1.2em;
       line-height: 1.2em;
+      grid-column: 2/8;
       text-align: justify;
-      grid-column: 1/9;
+}
+
+.SEIG2 img {
+      border: 2px solid #ffff;
+      float: right;
+      width: 450px;
+      height: auto;
+      right: 10px;
+      padding: 2px;
+      grid-column: 9/12;
+}
+
+.BAJA img {
+      border: 2px solid #ffff;
       float: left;
+      width: 450px;
+      height: auto;
+      left: 10px;
+      padding: 2px;
+      grid-column: 2/3;
+}
+
+.BAJA p {
+      font-size: 1.2em;
+      line-height: 1.2em;
+      text-align: justify;
+      grid-column: 4/12;
+}
+
+.SUPRA p {
+      font-size: 1.2em;
+      line-height: 1.2em;
+      grid-column: 2/8;
+      text-align: justify;
+}
+
+.SUPRA img {
+      border: 2px solid #ffff;
+      float: right;
+      width: 450px;
+      height: auto;
+      right: 10px;
+      padding: 2px;
+      grid-column: 9/12;
+}
+
+.AERO img {
+      border: 2px solid #ffff;
+      float: left;
+      width: auto;
+      height: 350px;
+      left: 10px;
+      padding: 2px;
+      grid-column: 2/3;
+}
+
+.AERO p {
+      font-size: 1.2em;
+      line-height: 1.2em;
+      text-align: justify;
+      grid-column: 4/12;
 }
