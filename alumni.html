@@ -2,11 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css"
-    />
+
     <link rel="stylesheet" href="./css/alumni.css" />
     <meta
       name="viewport"
@@ -19,55 +15,103 @@
   </head>
 
   <body>
+    <script>
+      function flip(event) {
+        var element = event.currentTarget;
+        if (element.className === 'card') {
+          if (element.style.transform == 'rotateY(180deg)') {
+            element.style.transform = 'rotateY(0deg)';
+          } else {
+            element.style.transform = 'rotateY(180deg)';
+          }
+        }
+      }
+    </script>
+
     <nav id="nav" class="nav"></nav>
+    <div class="container">
+      <div class="card-container card1">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <img src="./assets/Ford1.png" alt="" />
+          </div>
+          <div class="back"></div>
+        </div>
+      </div>
 
-    <div class="sidenav">
-      <a href="./cars.html#1">SEIG 1.0</a>
-      <a href="./cars.html#2">SEIG 2.0</a>
-      <a href="./cars.html#3">BAJA</a>
-      <a href="./cars.html#4">SUPRA</a>
-      <a href=./cars.html#5">AERO</a>
-  </div>
+      <div class="card-container card2">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <img src="./assets/Tesla.png" alt="" />
+          </div>
+          <div class="back">
+            <p>This is the back</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="card-container">
-      <div class="flip-card effect-on-hover box1">
-        <div class="front"><h1>Tesla</h1></div>
-        <div class="back"></div>
+      <div class="card-container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <p>BMW</p>
+          </div>
+          <div class="back">
+            <p></p>
+          </div>
+        </div>
       </div>
-      <div class="flip-card effect-on-hover box2">
-        <div class="front"><h1>BMW</h1></div>
-        <div class="back"></div>
+
+      <div class="card-container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <p>Mercedes-Benz</p>
+          </div>
+          <div class="back">
+            <p></p>
+          </div>
+        </div>
       </div>
-      <div class="flip-card effect-on-hover">
-        <div class="front"><h1>Mercedes-Benz</h1></div>
-        <div class="back"></div>
+
+      <div class="card-container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <p>Volvo</p>
+          </div>
+          <div class="back">
+            <p></p>
+          </div>
+        </div>
       </div>
-      <div class="flip-card effect-on-hover">
-        <div class="front"><h1>Volvo</h1></div>
-        <div class="back"></div>
+      <div class="card-container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <p>Audi</p>
+          </div>
+          <div class="back">
+            <p></p>
+          </div>
+        </div>
       </div>
-      <div class="flip-card effect-on-hover">
-        <div class="front"><h1>Audi</h1></div>
-        <div class="back"></div>
+      <div class="card-container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <p>Porsche</p>
+          </div>
+          <div class="back">
+            <p></p>
+          </div>
+        </div>
       </div>
-      <div class="flip-card effect-on-hover">
-        <div class="front"><h1>Porsche</h1></div>
-        <div class="back"></div>
-      </div>
-      <div class="flip-card effect-on-hover">
-        <div class="front"><h1>Nissan</h1></div>
-        <div class="back"></div>
-      </div>
-      <div class="flip-card effect-on-hover">
-        <div class="front"><h1>Ford</h1></div>
-        <div class="back"></div>
-      </div>
-      <div class="flip-card effect-on-hover">
-        <div class="front"><h1>Volkswagen</h1></div>
-        <div class="back"></div>
+      <div class="card-container">
+        <div class="card" onclick="flip(event)">
+          <div class="front">
+            <p>Ford</p>
+          </div>
+          <div class="back">
+            <p></p>
+          </div>
+        </div>
       </div>
     </div>
-
-    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
   </body>
 </html>

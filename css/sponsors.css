@@ -1,43 +1,32 @@
 .aftermovie {
-      grid-row: 1/7;
-      grid-column: 1/12;
-      z-index: 1;
-      right: 0;
-      bottom: 0;
-      min-width: 99vw; 
-      min-height: 100vh;
-      overflow-x: hidden;
+grid-row: 1/7;
+grid-column: 1/12;
+z-index: 1;
+right: 0;
+bottom: 0;
+min-width: 99vw; 
+min-height: 100vh;
+overflow-x: hidden;
 }
-
 .onvid {
-      text-align: center;
-      font-weight: bold;
-      align-items: center;
-      text-shadow: 0 0 0.5em black;
-      z-index: 2;
+text-align: center;
+font-weight: bold;
+align-items: center;
+text-shadow: 0 0 0.5em black;
+z-index: 2;
 }
-
 .title {
-      font-size: 6em;
-      grid-row: 4;
-      grid-column: 2/12;
+font-size: 6em;
+grid-row: 4;
+grid-column: 2/12;
 }
-
 .subtitle {
-      font-size: 3em;
-      grid-row: 5;
-      grid-column: 2/12;
+font-size: 3em;
+grid-row: 5;
+grid-column: 2/12;
 }
-
 .flex {
-      display: flex;
-  flex-wrap: wrap;
-}
-
-#gold .flex > div {
-      background-position: center !important;
-      background-size: cover !important;
-      margin: auto;
-      width: 450px;
-      height: 300px;
+      width: 100%;
+display: flex;
+flex-wrap: wrap;
 }

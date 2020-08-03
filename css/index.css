@@ -1,59 +1,50 @@
-/* LANDING */
-
 .aftermovie {
-      grid-row: 1/7;
-      grid-column: 1/12;
-      z-index: 1;
-      right: 0;
-      bottom: 0;
-      min-width: 99vw; 
-      min-height: 100vh;
-      overflow-x: hidden;
+grid-row: 1/7;
+grid-column: 1/12;
+z-index: 1;
+right: 0;
+bottom: 0;
+min-width: 99vw; 
+min-height: 100vh;
+overflow-x: hidden;
 }
-
 .onvid {
-      text-align: center;
-      font-weight: bold;
-      align-items: center;
-      text-shadow: 0 0 0.5em black;
-      z-index: 2;
+text-align: center;
+font-weight: bold;
+align-items: center;
+text-shadow: 0 0 0.5em black;
+z-index: 2;
 }
-
 .title {
-      font-size: 6em;
-      grid-row: 4;
-      grid-column: 2/12;
+font-size: 6em;
+grid-row: 4;
+grid-column: 2/12;
 }
-
 .subtitle {
-      font-size: 3em;
-      grid-row: 5;
-      grid-column: 2/12;
+font-size: 3em;
+grid-row: 5;
+grid-column: 2/12;
 }
-
 .about {
-      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("https://universe.bits-pilani.ac.in/Uploads/Goa/goamechanicalengineeringadmin/Microsections/2018-4-11--1-23-1-89_21314603_1408792549237243_3320008125616975328_n.jpg");
-      background-size:cover;
+background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("https://universe.bits-pilani.ac.in/Uploads/Goa/goamechanicalengineeringadmin/Microsections/2018-4-11--1-23-1-89_21314603_1408792549237243_3320008125616975328_n.jpg");
+background-size:cover;
 }
-
 .abtmid {
-  grid-column: 2/12;
-  grid-row: 3;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+grid-column: 2/12;
+grid-row: 3;
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(3px);
 }
-
 .hometext {
-      text-align: justify;
-      font-size: 1.5em;
-      line-height: 2em;
-      font-weight: 100;
+text-align: justify;
+font-size: 1.5em;
+line-height: 2em;
+font-weight: 100;
 }
-
 .homehead {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 3em;
-  line-height: 1em;
-  color: yellow;
-  font-weight: 400;
+font-family: 'Times New Roman', Times, serif;
+font-size: 3em;
+line-height: 1em;
+color: orange;
+font-weight: 400;
 }
