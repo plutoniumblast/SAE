@@ -1,32 +1,91 @@
 .aftermovie {
-grid-row: 1/7;
-grid-column: 1/12;
-z-index: 1;
-right: 0;
-bottom: 0;
-min-width: 99vw; 
-min-height: 100vh;
-overflow-x: hidden;
+      grid-row: 1/7;
+      grid-column: 1/12;
+      z-index: 1;
+      right: 0;
+      bottom: 0;
+      min-width: 99vw; 
+      min-height: 100vh;
+      overflow-x: hidden;
 }
+
 .onvid {
-text-align: center;
-font-weight: bold;
-align-items: center;
-text-shadow: 0 0 0.5em black;
-z-index: 2;
+      text-align: center;
+      font-weight: bold;
+      align-items: center;
+      text-shadow: 0 0 0.5em black;
+      z-index: 2;
 }
+
 .title {
-font-size: 6em;
-grid-row: 4;
-grid-column: 2/12;
+      font-size: 6em;
+      grid-row: 4;
+      grid-column: 2/12;
 }
+
 .subtitle {
-font-size: 3em;
-grid-row: 5;
-grid-column: 2/12;
+      font-size: 3em;
+      grid-row: 5;
+      grid-column: 2/12;
 }
+
+
+
+/* editing of the sponsors sections */
+
+.header {
+      text-align: center;
+      font-size: 50px;
+      float: center;
+      vertical-align: middle;
+}
+
+
 .flex {
-      width: 100%;
-display: flex;
-flex-wrap: wrap;
+      display: flex;
+    }
+    
+    /* Create three equal columns that sits next to each other */
+
+#gold {
+      display: block;
+      margin: 10px;
+}
+
+#gold .spon {
+      box-shadow: 8px 4px 8px 4px #ffd700;
+      text-align: center;
+      flex: 33.33%;
+      padding: 5px;
+      margin: 10px;
+      display: inline-block;
+} 
+
+#silver {
+      background-color: ;
+      display: block;
+      margin: 10px;
+}
+
+#silver .imgm {
+      box-shadow: 8px 4px 8px 4px #c0c0c0;
+      text-align: center;
+      flex: 33.33%;
+      padding: 5px;
+      margin: 10px;
+      display: inline-block;
+}
+
+#bronze {
+      display: block;
+      margin: 10px;
+}
+
+#bronze .imgm {
+      box-shadow: 8px 4px 8px 4px #da9f65;
+      text-align: center;
+      flex: 33.33%;
+      padding: 5px;
+      margin: 10px;
+      display: inline-block;
 }

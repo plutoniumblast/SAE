@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .companies {
 display: flex;
 flex-wrap: wrap;
@@ -34,6 +35,8 @@ flex-wrap: wrap;
   transform: rotateY(180deg);
 }
 =======
+=======
+>>>>>>> 264218143db07fce467318ddb34212af8623e0d1
 body {
   margin: 0;
   width: 100%;
@@ -156,4 +159,7 @@ div {
 .card2 .front {
   background-color: white;
 }
+<<<<<<< HEAD
 >>>>>>> Frk update
+=======
+>>>>>>> 264218143db07fce467318ddb34212af8623e0d1
