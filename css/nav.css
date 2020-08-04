@@ -25,15 +25,7 @@ display: block;
 height: 2px;
 left: 50%;
 position: absolute;
-<<<<<<< HEAD
-<<<<<<< HEAD
 background: orange;
-=======
-background: #fff;
->>>>>>> Frk update
-=======
-background: #fff;
->>>>>>> 264218143db07fce467318ddb34212af8623e0d1
 transition: width 0.3s ease 0s, left 0.3s ease 0s;
 width: 0;
 }
