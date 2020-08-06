@@ -1,53 +1,150 @@
 .landing {
-background: url('../assets/bg2.jpg') no-repeat center fixed;
-background-size: cover;
+    background: url('../assets/bg2.jpg') no-repeat center fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
+
 .midbox {
-text-align: center;
-font-weight: bold;
-align-items: center;
-color: #fff;
-z-index: 2;
-font-size: 8em;
-grid-row: 5;
-grid-column: 2/12;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    color: #fff;
+    z-index: 2;
+    font-size: 8em;
+    grid-row: 5;
+    grid-column: 2/12;
 }
+
 .ontext{
-background: linear-gradient(to bottom, rgba(200,10,10,0), rgb(255, 255, 0)),url('../assets/firepolygons.jpg');
-background-attachment: fixed;
-background-size: contain;
--webkit-text-fill-color: transparent;
-background-clip: text;
--webkit-background-clip: text;
+    background: linear-gradient(to bottom, rgba(200,10,10,0), rgb(255, 255, 0)),url('../assets/firepolygons.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
+
 .text {
-position: relative;
-top: -2.5em;
-left: -3.4em;
-font-size: 1.1em;
-z-index: 2;
+    position: relative;
+    top: -2.5em;
+    left: -3.4em;
+    font-size: 1.1em;
+    z-index: 2;
 }
+
 .word {
-position: absolute;
-opacity: 0;
+    position: absolute;
+    opacity: 0; 
 }
+
 .letter {
-display: inline-block;
-position: relative;
-transform: translateZ(25px);
-transform-origin: 50% 50% 25px;
+    display: inline-block;
+    position: relative;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
 }
+
 .letter.out {
-transform: rotateX(90deg);
-transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
 .letter.behind {transform: rotateX(-90deg);}
+
 .letter.in {
 transform: rotateX(0deg);
 transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 .wisteria {color: #8e44ad;}
 .belize {color: #2980b9;}
 .pomegranate {color: #c0392b;}
 .green {color: #16a085;}
 .midnight {color: #2c3e50;}
+
+.baja {
+    overflow: visible;
+    margin: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    text-align: justify;
+}
+
+#imgb {
+    width: 500px;
+    height: auto;
+    box-shadow: 8px 4px 8px 4px #0066CC;
+    grid-column: 2/5;
+    filter: blur(2px);
+}
+
+#imgb:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+.baja p {
+    grid-column: 7/12;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* Add Animation */
+.modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
