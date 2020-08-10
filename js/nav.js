@@ -1,5 +1,6 @@
 document.getElementById( 'nav' ).innerHTML = `
 <link rel="stylesheet" href="./css/nav.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 <input type="checkbox" id="nav-check" style="display: none;">
 <div class="nav-btn">
       <label for="nav-check">
@@ -7,11 +8,11 @@ document.getElementById( 'nav' ).innerHTML = `
       </label>
 </div>
 <div class="nav-links">
-      <a href="./index.html">Home</a>
-      <a href="./sponsors.html">Sponsors</a>
-      <a href="./alumni.html">Alumni</a>
-      <a href="./cars.html">Baja</a>
-      <a href="./contact.html">Contact Us</a>
+      <a href="./index.html"><i class="fas fa-home">Home</i></a>
+      <a href="./sponsors.html"><i class="fas fa-money-check-alt">Sponsors</i></a>
+      <a href="./alumni.html"><i class="fas fa-id-card">Alumni</i></a>
+      <a href="./cars.html"><i class="fas fa-car">Baja</i></a>
+      <a href="./contact.html"><i class="fas fa-address-card">Contact Us</i></a>
 </div>
 <div class="sidenav">
       <a href="./cars.html#1">SEIG 1.0</a>
