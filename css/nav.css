@@ -114,6 +114,12 @@ color: #2196F3;
 .sidenav a:hover {
 color: #ffff;
 }
+.nav-links i{
+    padding: 5px 0.4em;
+}
+.nav-links a{
+    text-shadow: 0 0.1em black;
+}
 @media (min-width:768px) {
 .nav>.nav-links {
 width: 25vw;
