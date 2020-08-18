@@ -19,6 +19,7 @@ z-index: 2;
 font-size: 6em;
 grid-row: 4;
 grid-column: 2/12;
+width: 100%;
 }
 .subtitle {
 font-size: 3em;
@@ -47,3 +48,29 @@ line-height: 1em;
 color: orange;
 font-weight: 400;
 }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .title {
+      font-size: 3.6em;
+  }
+  .subtitle {
+      font-size: 1.8em;
+  }
+  .homehead {
+      font-size: 1.8em;
+  }
+  .hometext {
+      font-size: 90%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
