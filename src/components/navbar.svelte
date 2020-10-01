@@ -119,9 +119,12 @@
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon" /></label>
       <ul class="menu">
-            <li><a href="#">OBJ1</a></li>
-            <li><a href="#">LONGOBJ1</a></li>
-            <li><a href="#">LONGOBJ2</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Baja</a></li>
+            <li><a href="#">Supra</a></li>
+            <li><a href="#">Aero</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">Alumini</a></li>
             <li><a href="#">Contact</a></li>
       </ul>
 </header>

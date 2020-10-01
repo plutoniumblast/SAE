@@ -50,5 +50,5 @@ export default {
 		production && terser(),
 		json()
 	],
-	watch: { clearScreen: false }
+	watch: { clearScreen: true }
 };
