@@ -50,5 +50,5 @@
 			<Contact data={data.contact} />
 		</div>
 	{/if}
-	<Socials />
+	<!-- <Socials /> -->
 </main>
