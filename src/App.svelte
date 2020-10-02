@@ -9,44 +9,43 @@
 	import Contact from "./components/contact.svelte";
 	import Socials from "./micro/socials.svelte";
 
-	import { slide } from "svelte/transition";
+	import { fade } from "svelte/transition";
 
+	import { page } from "./core/store";
 	import data from "./core/data.json";
-
-	$: tab = "contact";
 </script>
 
 <style>
 </style>
 
-<main>
+<main id="docTop">
 	<Navbar />
-	{#if tab == 'home'}
-		<div transition:slide>
+	{#if $page == 'home'}
+		<div transition:fade>
 			<Home />
 		</div>
-	{:else if tab == 'baja'}
-		<div transition:slide>
+	{:else if $page == 'baja'}
+		<div transition:fade>
 			<Baja />
 		</div>
-	{:else if tab == 'supra'}
-		<div transition:slide>
+	{:else if $page == 'supra'}
+		<div transition:fade>
 			<Supra />
 		</div>
-	{:else if tab == 'aero'}
-		<div transition:slide>
+	{:else if $page == 'aero'}
+		<div transition:fade>
 			<Aero />
 		</div>
-	{:else if tab == 'alum'}
-		<div transition:slide>
+	{:else if $page == 'alum'}
+		<div transition:fade>
 			<Alum />
 		</div>
-	{:else if tab == 'spons'}
-		<div transition:slide>
+	{:else if $page == 'spons'}
+		<div transition:fade>
 			<Spons />
 		</div>
-	{:else if tab == 'contact'}
-		<div transition:slide>
+	{:else if $page == 'contact'}
+		<div transition:fade>
 			<Contact data={data.contact} />
 		</div>
 	{/if}
