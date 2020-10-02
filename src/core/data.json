@@ -1,1 +1,27 @@
-{}
+{
+      "contact": {
+            "people": [
+                  {
+                        "name": "Rugved Katole",
+                        "img": "https://instagram.fbom36-1.fna.fbcdn.net/v/t51.2885-15/e35/95355757_238443087263421_2071635142811609194_n.jpg?_nc_ht=instagram.fbom36-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=NCLJL8qexCQAX_gJGL3&_nc_tp=18&oh=f28993d4043ad9b0e99c865cf260bd27&oe=5F9FB056",
+                        "post": "Chairperson",
+                        "mail": "www.google.com",
+                        "linkedin": "www.google.com"
+                  },
+                  {
+                        "name": "Amal",
+                        "img": "https://picsum.photos/id/412/200/300",
+                        "post": "Vice Chairperson",
+                        "mail": "www.google.com",
+                        "linkedin": "www.google.com"
+                  },
+                  {
+                        "name": "Hemang Agarwal",
+                        "img": "https://instagram.fbom36-1.fna.fbcdn.net/v/t51.2885-15/e35/95856210_2518834825045274_1755762509371242428_n.jpg?_nc_ht=instagram.fbom36-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=Gvr1XdXtNBsAX_TjLne&_nc_tp=18&oh=3c1cb07b3dfc9787b8513b22e3de30b8&oe=5FA04172",
+                        "post": "Treasurer",
+                        "mail": "www.google.com",
+                        "linkedin": "www.google.com"
+                  }
+            ]
+      }
+}

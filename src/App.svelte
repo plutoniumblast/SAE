@@ -13,7 +13,7 @@
 
 	import data from "./core/data.json";
 
-	$: tab = "baja";
+	$: tab = "contact";
 </script>
 
 <style>
@@ -47,8 +47,8 @@
 		</div>
 	{:else if tab == 'contact'}
 		<div transition:slide>
-			<Contact />
+			<Contact data={data.contact}/>
 		</div>
 	{/if}
-	<Socials />
+	<!-- <Socials /> -->
 </main>
