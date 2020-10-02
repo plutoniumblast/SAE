@@ -1,16 +1,32 @@
 <script>
       import Lazy from "svelte-lazy";
+      import Carousel from "../micro/folderview.svelte";
+      import { fade } from "svelte/transition";
 
       export let data;
       const people = data.people;
+      const gallery = data.gallery;
       let email = "",
             msg = "",
             name = "";
+
+      $: pics = gallery[0].data;
+      $: showFolder = 0;
+
+      const hideCar = () => {
+            showFolder = 0;
+      };
+      const crs = (e) => {
+            pics = gallery[+e.target.id].data;
+            showFolder = 1;
+            window.scrollTo(0, 0);
+      };
 </script>
 
 <style type="text/scss">
       .contact {
             display: flex;
+            flex-direction: row-reverse;
             flex-wrap: wrap;
             padding-top: 4em;
             color: white;
@@ -111,6 +127,34 @@
                   }
             }
       }
+      .folder {
+            width: 50%;
+            img {
+                  margin: 1em;
+                  width: 300px;
+                  height: 200px;
+                  border-radius: 0.5em;
+                  object-fit: cover;
+                  transition: transform 1.5s ease;
+                  &:hover {
+                        transform: scale(1.1);
+                        cursor: pointer;
+                        transition: transform 1.5s ease;
+                  }
+            }
+      }
+      @media (max-width: 1200px) {
+            .person {
+                  padding-left: 10%;
+            }
+            .folder {
+                  img {
+                        margin: 1em;
+                        width: 225px;
+                        height: 150px;
+                  }
+            }
+      }
       @media (max-width: 768px) {
             .contact section {
                   width: 100%;
@@ -133,11 +177,18 @@
                         }
                   }
             }
+            .folder {
+                  width: 100%;
+                  img {
+                        margin: 0;
+                        width: 100%;
+                        height: 225px;
+                  }
+            }
       }
 </style>
 
-<div class="contact">
-      <section class="left">Gallery aayegi ruko</section>
+<div class="contact" style="z-index:1" id="#contTop">
       <section class="right">
             <div
                   style="display:flex;justify-content:space-around;padding:0.5em 0;pointer-events:none;">
@@ -221,6 +272,16 @@
                         <input type="submit" />
                   </form>
             </div>
+            <div style="display:flex;align-items:center;padding:1em 0;">
+                  <hr
+                        style="width:100%;border-radius:5px;border:2px dashed #ff666688;height:0;" />
+                  <object
+                        width="100px"
+                        height="20px"
+                        title="f1car"
+                        data="./assets/micro/f1.svg"
+                        type="image/svg+xml" />
+            </div>
             <div style="margin:1em 0">
                   {#each people as person}
                         <div class="person">
@@ -240,7 +301,7 @@
                                     </span>
                                     <br />
                                     <span
-                                          style="font-weight:300;color:#bbb;font-size:0.75em">{person.post}</span>
+                                          style="font-weight:400;color:#bbb;font-size:0.75em">{person.post}</span>
                                     <div
                                           style="padding:0;margin:0;display:flex;">
                                           <a href={person.mail}>
@@ -272,4 +333,69 @@
                   {/each}
             </div>
       </section>
+      <section class="left">
+            <div style="line-height:0.75rem;padding:1em;margin-bottom:1em;">
+                  <span style="font-size:2.5em;">Gallery</span>
+                  <svg
+                        id="i-photo"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 32 32"
+                        width="32"
+                        height="32"
+                        fill="none"
+                        stroke="currentcolor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2">
+                        <path
+                              d="M20 24 L12 16 2 26 2 2 30 2 30 24 M16 20 L22 14 30 22 30 30 2 30 2 24" />
+                        <circle cx="10" cy="9" r="3" />
+                  </svg>
+            </div>
+            <div
+                  style="display: flex;flex-wrap: wrap;justify-content: space-around;">
+                  {#each gallery as folder, i}
+                        <div class="folder">
+                              <Lazy
+                                    offset={100}
+                                    fadeOption={{ delay: 0, duration: 500 }}
+                                    height={300}>
+                                    <img
+                                          alt=""
+                                          id={i}
+                                          on:click={crs}
+                                          src={folder.thumb} />
+                              </Lazy>
+                              {folder.name}
+                              ({folder.data.length}
+                              items)
+                        </div>
+                  {/each}
+            </div>
+      </section>
 </div>
+
+{#if showFolder}
+      <div
+            style="width:100vw;height:100vh;background:#00000088:z-index:2:position:absolute;top:0"
+            transition:fade>
+            <div
+                  style="position:absolute;right:1em;top:5em;z-index:3"
+                  on:click={hideCar}>
+                  <svg
+                        id="i-close"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 32 32"
+                        width="32"
+                        height="32"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2">
+                        <path d="M2 30 L30 2 M30 30 L2 2" />
+                  </svg>
+            </div>
+            <Carousel {pics} />
+      </div>
+{/if}

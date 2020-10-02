@@ -1,5 +1,23 @@
 {
       "contact": {
+            "gallery": [
+                  {
+                        "name": "BITSAA Global Meet",
+                        "thumb": "https://lh3.googleusercontent.com/FeR3mUzuXER4tKYYvTonCdQXzyUscQFiPxCjrIElpTROnCg4ZZAZOS1d11CrF0BRzAfgzR6AWne9qQFnbKZ8J9QqVOsp8l1s0yubv1fEXiTX8Oqsna8GcnRhLPImERN0DoTDakcA",
+                        "data": [
+                              "https://www.formula1.com/content/dam/fom-website/manual/Misc/2020/Misc/GettyImages-1262699302.jpg.transform/6col/image.jpg",
+                              "https://www.formula1.com/content/dam/fom-website/manual/Technical/2020/Russia/FER-RUSSIA-F1_Tech_Tuesday.jpg.transform/6col/image.jpg"
+                        ]
+                  },
+                  {
+                        "name": "Quark",
+                        "thumb": "https://lh3.googleusercontent.com/FeR3mUzuXER4tKYYvTonCdQXzyUscQFiPxCjrIElpTROnCg4ZZAZOS1d11CrF0BRzAfgzR6AWne9qQFnbKZ8J9QqVOsp8l1s0yubv1fEXiTX8Oqsna8GcnRhLPImERN0DoTDakcA",
+                        "data": [
+                              "https://www.formula1.com/content/dam/fom-website/manual/Misc/2020/2020races/Mugello/RoadToF1/GettyImages-1266452276%20(1).jpg.transform/6col/image.jpg",
+                              "https://www.formula1.com/content/dam/fom-website/sutton/2020/Russia/Sunday/1276939942.jpg.transform/6col/image.jpg"
+                        ]
+                  }
+            ],
             "people": [
                   {
                         "name": "Rugved Katole",
@@ -9,11 +27,11 @@
                         "linkedin": "www.google.com"
                   },
                   {
-                        "name": "Amal",
+                        "name": "Amal M Nair",
                         "img": "https://picsum.photos/id/412/200/300",
                         "post": "Vice Chairperson",
-                        "mail": "www.google.com",
-                        "linkedin": "www.google.com"
+                        "mail": "mailto:amalmnair1999@gmail.com",
+                        "linkedin": "https://linkedin.com/in/amal-nair-90886819b/"
                   },
                   {
                         "name": "Hemang Agarwal",

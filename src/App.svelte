@@ -47,8 +47,8 @@
 		</div>
 	{:else if tab == 'contact'}
 		<div transition:slide>
-			<Contact data={data.contact}/>
+			<Contact data={data.contact} />
 		</div>
 	{/if}
-	<!-- <Socials /> -->
+	<Socials />
 </main>
