@@ -25,25 +25,17 @@ a:visited {
 	text-decoration: none;
 }
 
-
-.btn-01 {
-	background: #c6e2ed;
-	color: #4b7ca7;
-	border: #8bcdea 1px solid;
-	&:hover {
-		color: #0097d8;
-	}
-	&:before {
-		background: #8bcdea;
-	}
-	&:after {
-		background: #8bcdea;
-	}
-}
 button {
+	font-size: 101%;
+	border: 0;
+	position: relative;
+	background: transparent;
+	letter-spacing: 0.15em;
+	cursor: pointer;
+	transition: 0.8s ease all;
+	outline: none;
 	&:hover {
-		background: #fff;
-		border: #FFF 1px solid;
+		background: transparent;
 		&:before {
 			width: 100%;
 			transition: 800ms ease all;
@@ -75,15 +67,19 @@ button {
 		left: 0;
 		bottom: 0;
 	}
-	color: #4b7ca7;
-	height: 45px;
-	font-size: 1.6em;
-	border: none;
-	position: relative;
-	letter-spacing: 0.15em;
-	padding: 0 1.5em;
-	cursor: pointer;
-	transition: 800ms ease all;
-	outline: none;
-	margin: 0 10px;
+}
+.sponsor-btn {
+	color: #ddd;
+	&:hover{
+		color: #fff;
+		svg{
+			path{
+				stroke: #f00;
+				transition: stroke 0.6s ease;
+			}
+		}
+	}
+	&:before,&:after {
+		background: #fff;
+	}
 }

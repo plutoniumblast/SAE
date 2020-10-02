@@ -137,11 +137,11 @@
                   height: 200px;
                   border-radius: 0.5em;
                   object-fit: cover;
-                  transition: transform 1.5s ease;
+                  transition: transform 0.5s ease;
                   &:hover {
                         transform: scale(1.1);
                         cursor: pointer;
-                        transition: transform 1.5s ease;
+                        transition: transform 0.7s ease;
                   }
             }
       }
