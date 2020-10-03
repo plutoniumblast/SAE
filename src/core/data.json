@@ -1,4 +1,36 @@
 {
+      "baja": {
+            "subsys": [
+                  {
+                        "name": "Electrical",
+                        "img": "https://cleantechnica.com/files/2020/09/New-Battery-Pack-Tesla-Battery-Day-Watermarked.jpg"
+                  },
+                  {
+                        "name": "Suspension",
+                        "img": "https://www.quadratec.com/sites/default/files/styles/product_zoomed/public/product_images/Rough-Country-4in-Long-Arm-Suspension-Lift-Kit-Jeep-Wrangler-Unlimited-JK-Installed-Front.jpg"
+                  },
+                  {
+                        "name": "Engine",
+                        "img": "https://www.automoblog.net/wp-content/uploads/2017/04/DG018_085CLc4j3m3pu92bgd8bo6f70t4v50h.jpg"
+                  },
+                  {
+                        "name": "Powertrain",
+                        "img": "https://images.hgmsites.net/med/2008-ford-f-150_100358428_m.jpg"
+                  },
+                  {
+                        "name": "Drivetrain",
+                        "img": "https://i.pinimg.com/originals/e4/13/21/e413216f20786f039380ff3274cae38d.png"
+                  },
+                  {
+                        "name": "Aerodynamics",
+                        "img": "https://lh3.googleusercontent.com/proxy/-TTawzOMMWQKvhJQwyHPVAxPGlmtYU5rmq7W5gWQQ2YIBaUJexY7HXUNjycR7jC0PPFgiTAsdvOilQuFpJ0LisRfyEbn0ie2ZErpUeY8ivqkLzuLl0t91thBWNDv6gGUy8WlwLPCvfE"
+                  },
+                  {
+                        "name": "Braking",
+                        "img": "https://static.turbosquid.com/Preview/000737/456/0B/_0.jpg"
+                  }
+            ]
+      },
       "contact": {
             "gallery": [
                   {

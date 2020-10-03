@@ -1,9 +1,12 @@
 <script>
-      import { page } from "../core/store";
+      import { createEventDispatcher } from "svelte";
+
+      const dispatch = createEventDispatcher();
 
       const chTab = (e) => {
-            page.set(e.target.parentElement.id);
-            console.log($page);
+            dispatch("page", {
+                  text: e.target.parentElement.id,
+            });
       };
 </script>
 
@@ -32,7 +35,7 @@
                   &:checked {
                         ~ {
                               .menu {
-                                    max-height: 240px;
+                                    max-height: 100%;
                               }
                               .menu-icon {
                                     .navicon {

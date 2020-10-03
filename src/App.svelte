@@ -10,41 +10,44 @@
 	import Socials from "./micro/socials.svelte";
 
 	import { fade } from "svelte/transition";
-
-	import { page } from "./core/store";
 	import data from "./core/data.json";
+
+	$: page = "baja";
+	const chPg = (e) => {
+		page = e.detail.text;
+	};
 </script>
 
 <style>
 </style>
 
 <main id="docTop">
-	<Navbar />
-	{#if $page == 'home'}
+	<Navbar on:page={chPg} />
+	{#if page == 'home'}
 		<div transition:fade>
 			<Home />
 		</div>
-	{:else if $page == 'baja'}
+	{:else if page == 'baja'}
 		<div transition:fade>
-			<Baja />
+			<Baja data={data.baja} />
 		</div>
-	{:else if $page == 'supra'}
+	{:else if page == 'supra'}
 		<div transition:fade>
 			<Supra />
 		</div>
-	{:else if $page == 'aero'}
+	{:else if page == 'aero'}
 		<div transition:fade>
 			<Aero />
 		</div>
-	{:else if $page == 'alum'}
+	{:else if page == 'alum'}
 		<div transition:fade>
 			<Alum />
 		</div>
-	{:else if $page == 'spons'}
+	{:else if page == 'spons'}
 		<div transition:fade>
 			<Spons />
 		</div>
-	{:else if $page == 'contact'}
+	{:else if page == 'contact'}
 		<div transition:fade>
 			<Contact data={data.contact} />
 		</div>
