@@ -282,16 +282,11 @@
             <div style="margin:1em 0">
                   {#each people as person}
                         <div class="person">
-                              <Lazy
-                                    offset={100}
-                                    fadeOption={{ delay: 0, duration: 500 }}
-                                    height={300}>
-                                    <img
-                                          height="1em"
-                                          width="1em"
-                                          alt=""
-                                          src={person.img} />
-                              </Lazy>
+                              <img
+                                    height="1em"
+                                    width="1em"
+                                    alt=""
+                                    src={person.img} />
                               <div class="subperson">
                                     <span style="font-weight:500">
                                           {person.name}
@@ -353,16 +348,11 @@
                   style="display: flex;flex-wrap: wrap;justify-content: space-around;">
                   {#each gallery as folder, i}
                         <div class="folder">
-                              <Lazy
-                                    offset={100}
-                                    fadeOption={{ delay: 0, duration: 500 }}
-                                    height={300}>
-                                    <img
-                                          alt=""
-                                          id={i}
-                                          on:click={crs}
-                                          src={folder.thumb} />
-                              </Lazy>
+                              <img
+                                    alt=""
+                                    id={i}
+                                    on:click={crs}
+                                    src={folder.thumb} />
                               {folder.name}
                               ({folder.data.length}
                               items)

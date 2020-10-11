@@ -23,7 +23,7 @@
                   },
                   {
                         "name": "Aerodynamics",
-                        "img": "https://lh3.googleusercontent.com/proxy/-TTawzOMMWQKvhJQwyHPVAxPGlmtYU5rmq7W5gWQQ2YIBaUJexY7HXUNjycR7jC0PPFgiTAsdvOilQuFpJ0LisRfyEbn0ie2ZErpUeY8ivqkLzuLl0t91thBWNDv6gGUy8WlwLPCvfE"
+                        "img": "https://www.racefans.net/wp-content/uploads/2019/04/f1-2021-front.jpg"
                   },
                   {
                         "name": "Braking",
@@ -31,11 +31,19 @@
                   }
             ]
       },
+      "alumini": {
+            "companies": [
+                  {
+                        "name": "tesla",
+                        "data": []
+                  }
+            ]
+      },
       "contact": {
             "gallery": [
                   {
                         "name": "BITSAA Global Meet",
-                        "thumb": "https://lh3.googleusercontent.com/FeR3mUzuXER4tKYYvTonCdQXzyUscQFiPxCjrIElpTROnCg4ZZAZOS1d11CrF0BRzAfgzR6AWne9qQFnbKZ8J9QqVOsp8l1s0yubv1fEXiTX8Oqsna8GcnRhLPImERN0DoTDakcA",
+                        "thumb": "https://dutvyzacdrh9k.cloudfront.net/assets/org/185/ss/s_R4TCCh1uZIorFNWgvJtf_BITSSA_logo_high_res_25.jpeg",
                         "data": [
                               "https://www.formula1.com/content/dam/fom-website/manual/Misc/2020/Misc/GettyImages-1262699302.jpg.transform/6col/image.jpg",
                               "https://www.formula1.com/content/dam/fom-website/manual/Technical/2020/Russia/FER-RUSSIA-F1_Tech_Tuesday.jpg.transform/6col/image.jpg"
@@ -43,7 +51,7 @@
                   },
                   {
                         "name": "Quark",
-                        "thumb": "https://lh3.googleusercontent.com/FeR3mUzuXER4tKYYvTonCdQXzyUscQFiPxCjrIElpTROnCg4ZZAZOS1d11CrF0BRzAfgzR6AWne9qQFnbKZ8J9QqVOsp8l1s0yubv1fEXiTX8Oqsna8GcnRhLPImERN0DoTDakcA",
+                        "thumb": "https://bits-quark.org/events/quark_logo.png",
                         "data": [
                               "https://www.formula1.com/content/dam/fom-website/manual/Misc/2020/2020races/Mugello/RoadToF1/GettyImages-1266452276%20(1).jpg.transform/6col/image.jpg",
                               "https://www.formula1.com/content/dam/fom-website/sutton/2020/Russia/Sunday/1276939942.jpg.transform/6col/image.jpg"

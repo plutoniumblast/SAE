@@ -8,7 +8,6 @@
 
 <style type="text/scss">
       section {
-            padding-top: 4em;
             color: white;
       }
       .oldModel {
@@ -53,7 +52,7 @@
             padding: 1em;
             display: flex;
             flex-wrap: wrap;
-            width: 100%;
+            width: calc(100% - 2em);
             height: 100vh;
             align-items: center;
             background: white;
@@ -106,6 +105,7 @@
             .landing {
                   padding: 0.25em;
                   height: 100vh;
+                  width: calc(100% - 0.5em);
                   img {
                         width: calc(60% - 0.5em);
                   }
@@ -148,6 +148,7 @@
             }
             .landing {
                   padding: 0 0.25em;
+                  width: calc(100% - 0.5em);
                   min-height: 100vh;
                   img {
                         width: 100%;
@@ -168,7 +169,7 @@
 <section>
       <div class="landing">
             <img
-                  src="https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5d961f5c21a83177ad6ea93d-ferrari-laferrari-2013-carbanner-desktop?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750"
+                  src="https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5d1e265c58f6950a986a9996-d-dinamica-040719?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&width=1920&height=1080"
                   alt="" />
             <div class="specs">
                   <div class="spec">

@@ -4,53 +4,36 @@
 	import Baja from "./components/baja.svelte";
 	import Supra from "./components/supra.svelte";
 	import Aero from "./components/aero.svelte";
-	import Alum from "./components/alum.svelte";
-	import Spons from "./components/spons.svelte";
+	import Alumini from "./components/alum.svelte";
+	import Sponsor from "./components/spons.svelte";
 	import Contact from "./components/contact.svelte";
 	import Socials from "./micro/socials.svelte";
 
 	import { fade } from "svelte/transition";
 	import data from "./core/data.json";
 
-	$: page = "baja";
-	const chPg = (e) => {
-		page = e.detail.text;
-	};
+	$: page = "Baja";
+
+	const options = [
+		{ name: "Baja", component: Baja },
+		{ name: "Alumini", component: Alumini },
+		{ name: "Contact", component: Contact },
+	];
 </script>
 
 <style>
 </style>
 
 <main id="docTop">
-	<Navbar on:page={chPg} />
-	{#if page == 'home'}
-		<div transition:fade>
-			<Home />
-		</div>
-	{:else if page == 'baja'}
-		<div transition:fade>
-			<Baja data={data.baja} />
-		</div>
-	{:else if page == 'supra'}
-		<div transition:fade>
-			<Supra />
-		</div>
-	{:else if page == 'aero'}
-		<div transition:fade>
-			<Aero />
-		</div>
-	{:else if page == 'alum'}
-		<div transition:fade>
-			<Alum />
-		</div>
-	{:else if page == 'spons'}
-		<div transition:fade>
-			<Spons />
-		</div>
-	{:else if page == 'contact'}
-		<div transition:fade>
-			<Contact data={data.contact} />
-		</div>
-	{/if}
+	<Navbar bind:page {options} />
+	{#each options as pg}
+		{#if page == pg.name}
+			<section transition:fade>
+				<svelte:component
+					this={pg.component}
+					data={data[pg.name.toLowerCase()]} />
+			</section>
+		{/if}
+	{/each}
 	<!-- <Socials /> -->
 </main>

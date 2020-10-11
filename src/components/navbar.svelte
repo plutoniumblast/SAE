@@ -1,12 +1,8 @@
 <script>
-      import { createEventDispatcher } from "svelte";
-
-      const dispatch = createEventDispatcher();
+      export let options, page;
 
       const chTab = (e) => {
-            dispatch("page", {
-                  text: e.target.parentElement.id,
-            });
+            page = e.target.parentElement.id;
       };
 </script>
 
@@ -128,12 +124,10 @@
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon" /></label>
       <ul class="menu">
-            <li id="home" on:click={chTab}><a href="#docTop">Home</a></li>
-            <li id="baja" on:click={chTab}><a href="#docTop">Baja</a></li>
-            <li id="supra" on:click={chTab}><a href="#docTop">Supra</a></li>
-            <li id="aero" on:click={chTab}><a href="#docTop">Aero</a></li>
-            <li id="spons" on:click={chTab}><a href="#docTop">Sponsor</a></li>
-            <li id="alum" on:click={chTab}><a href="#docTop">Alumini</a></li>
-            <li id="contact" on:click={chTab}><a href="#docTop">Contact</a></li>
+            {#each options as pg}
+                  <li id={pg.name} on:click={chTab}>
+                        <a href="#docTop">{pg.name}</a>
+                  </li>
+            {/each}
       </ul>
 </header>
