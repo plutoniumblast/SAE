@@ -61,6 +61,16 @@
             filter: grayscale(100%);
         }
     }
+    @media (max-width: 768px) {
+        .car {
+            width: calc(100% - 40px);
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+            background: #333;
+            text-align: center;
+        }
+    }
 </style>
 
 <section>
