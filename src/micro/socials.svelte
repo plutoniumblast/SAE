@@ -12,11 +12,7 @@
 <article class="socials">
       <div class="drawer">
             <div class="hidden">Baja <br /> Supra<br /> Aero</div>
-            <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="132.004"
-                  height="132"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+            <svg width="132.004" height="132"><defs>
                         <linearGradient id="b">
                               <stop offset="0" stop-color="#3771c8" />
                               <stop stop-color="#3771c8" offset=".128" />

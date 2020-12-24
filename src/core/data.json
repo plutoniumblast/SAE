@@ -1,5 +1,5 @@
 {
-      "baja": {
+      "supra": {
             "subsys": [
                   {
                         "name": "Electrical",
@@ -79,6 +79,47 @@
                         "post": "Treasurer",
                         "mail": "www.google.com",
                         "linkedin": "www.google.com"
+                  }
+            ]
+      },
+      "sponsor": {
+            "spons": [
+                  {
+                        "name": "Dassault Systemes",
+                        "image": "upload.wikimedia.org/wikipedia/en/thumb/3/31/Dassault_Systèmes_logo.svg/1280px-Dassault_Systèmes_logo.svg.png"
+                  },
+                  {
+                        "name": "Ansys",
+                        "image": "upload.wikimedia.org/wikipedia/en/9/92/Ansys_logo.png"
+                  },
+                  {
+                        "name": "Black+ Decker",
+                        "image": "upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Black%2BDecker_Logo.svg/1200px-Black%2BDecker_Logo.svg.png"
+                  },
+                  {
+                        "name": "Kirloskar",
+                        "image": "seeklogo.com/images/K/kirloskar-logo-D78CA470D2-seeklogo.com.png"
+                  },
+                  {
+                        "name": "SKF",
+                        "image": "logos-download.com/wp-content/uploads/2016/08/SKF_logo.png"
+                  }
+            ],
+            "cars": [
+                  {
+                        "name": "SAE Baja",
+                        "handlerImg": "cdn.vox-cdn.com/thumbor/rES5fxTJl-z014NcJV7Rradtxrc=/0x86:706x557/1400x1400/filters:focal(0x86:706x557):format(png)/cdn.vox-cdn.com/imported_assets/847184/stevejobs.png",
+                        "handler": "Hemu Boi"
+                  },
+                  {
+                        "name": "SAE Supra",
+                        "handlerImg": "static.theceomagazine.net/wp-content/uploads/2018/10/15093202/elon-musk.jpg",
+                        "handler": "Katlu Boi"
+                  },
+                  {
+                        "name": "SAE Aero",
+                        "handlerImg": "deadline.com/wp-content/uploads/2018/02/bill-gates-2.jpg?w=792",
+                        "handler": "Amaze Bhai"
                   }
             ]
       }

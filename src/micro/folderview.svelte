@@ -54,8 +54,6 @@
 <div class="slider">
       <div class="left" on:click={decr}>
             <svg
-                  id="i-chevron-left"
-                  xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 32 32"
                   width="32"
                   height="32"
@@ -74,8 +72,6 @@
       {/each}
       <div class="right" on:click={incr}>
             <svg
-                  id="i-chevron-right"
-                  xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 32 32"
                   width="32"
                   height="32"

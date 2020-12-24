@@ -1,9 +1,10 @@
 {
-  "name": "svelte-app",
+  "name": "sae",
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
+    "devSass": "rollup -c -w & node-sass -w public/global.scss public/global.css --output-style compressed",
     "start": "sirv public"
   },
   "devDependencies": {
