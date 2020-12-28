@@ -9,7 +9,10 @@
 <style type="text/scss">
       .header {
             position: fixed;
-            background: #181818;
+            background: #222c;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            -moz-backdrop-filter: blur(10px);
             width: 100%;
             z-index: 3;
             ul {

@@ -3,12 +3,17 @@
 
       export let data;
 
+      let car = 2019;
       const subsystem = data.subsys;
 </script>
 
 <style type="text/scss">
       section {
             color: white;
+            svg {
+                  width: 50px;
+                  height: 50px;
+            }
       }
       .oldModel {
             width: 100%;
@@ -34,16 +39,26 @@
       }
       .subsystems {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            width: 100%;
+            h1 {
+                  font-size: 3em;
+                  line-height: 0.2em;
+            }
+            overflow-x: scroll;
             text-align: center;
             .system {
-                  margin: 1em 0;
-                  width: 20%;
+                  padding: 10px;
+                  min-width: 300px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-around;
+                  background: #444;
+                  border-radius: 10px;
+                  margin: 0 5px;
                   img {
-                        width: 5em;
-                        height: 5em;
-                        border-radius: 50%;
+                        width: 150px;
+                        height: 100px;
+                        border-radius: 10px;
                         object-fit: cover;
                   }
             }
@@ -97,11 +112,6 @@
                         }
                   }
             }
-            .subsystems {
-                  .system {
-                        width: 25%;
-                  }
-            }
             .landing {
                   padding: 0.25em;
                   height: 100vh;
@@ -140,11 +150,6 @@
             }
             .about {
                   font-size: 1rem;
-            }
-            .subsystems {
-                  .system {
-                        width: 33%;
-                  }
             }
             .landing {
                   padding: 0 0.25em;
@@ -205,8 +210,6 @@
                               style="font-size:4em;font-weight:200;padding:0 0.15em;">
                               <i> Sponsor Us </i></span>
                         <svg
-                              width="50"
-                              height="50"
                               viewBox="0 0 4274 3976"
                               style="transform:scaleY(-1) skewX(0deg)">
                               <path
@@ -221,34 +224,19 @@
             <br />
             <div class="oldModel">
                   <div class="car">
-                        <Lazy
-                              offset={100}
-                              fadeOption={{ delay: 0, duration: 500 }}
-                              height={300}>
-                              <img src="./assets/cars/sieg1.jpg" alt="" />
-                        </Lazy>
-                        <br />
-                        <span style="color:#ccc">Baja 2017</span>
+                        <img src="./assets/cars/sieg{car}.jpg" alt={car} />
                   </div>
-                  <div class="car">
-                        <Lazy
-                              offset={100}
-                              fadeOption={{ delay: 0, duration: 500 }}
-                              height={300}>
-                              <img src="./assets/cars/sieg2.jpg" alt="" />
-                        </Lazy>
-                        <br />
-                        <span style="color:#ddd">Baja 2018</span>
-                  </div>
-                  <div class="car">
-                        <Lazy
-                              offset={100}
-                              fadeOption={{ delay: 0, duration: 500 }}
-                              height={300}>
-                              <img src="./assets/cars/seig3.jpg" alt="" />
-                        </Lazy>
-                        <br />
-                        <span style="color:#eee">Baja 2019</span>
+                  <div style="width:100%;margin-top:10px;">
+                        <div
+                              style="width:33%;margin:0 auto;display:flex;justify-content:space-around;">
+                              {#each [2019, 2018, 2017] as yr}
+                                    <button
+                                          on:click={() => (car = yr)}
+                                          style="background:#f88;width:75px;margin:5px;color:#fff;border-radius:10px;">
+                                          {yr}
+                                    </button>
+                              {/each}
+                        </div>
                   </div>
             </div>
             <div class="about">
@@ -272,7 +260,7 @@
                         adipisci temporibus aspernatur excepturi reiciendis.
                   </p>
             </div>
-            <h1 style="padding:0.25em;font-size:3em;">Subsystems</h1>
+            <h1 style="padding:0 1em;">Subsystems</h1>
             <div class="subsystems">
                   {#each subsystem as system}
                         <div class="system">
@@ -283,7 +271,16 @@
                                     <img src={system.img} alt="" />
                               </Lazy>
                               <br />
-                              {system.name}
+
+                              <h3 style="color:#f88">{system.name}</h3>
+                              <div>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sequi, eos sapiente
+                                    accusantium tempora cupiditate unde sit ab
+                                    qui, voluptas commodi necessitatibus
+                                    temporibus neque amet, animi odit. Iure
+                                    vitae porro perferendis?
+                              </div>
                         </div>
                   {/each}
             </div>
@@ -300,9 +297,7 @@
             <div style="display:flex;font-size:1.5em;padding:0.5em 0;">
                   <h1>The Team</h1>
                   <svg
-                        style="position:relative;top:1.25em;left:0.5em;"
-                        width="32pt"
-                        height="32pt"
+                        style="position:relative;top:1em;left:0.5em;"
                         viewBox="0 -1250 1250 1250"
                         preserveAspectRatio="xMidYMid meet">
                         <g transform="scale(0.1,-0.1)" fill="#fff">

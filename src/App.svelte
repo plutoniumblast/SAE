@@ -12,12 +12,12 @@
 	import { fade } from "svelte/transition";
 	import data from "./core/data.json";
 
-	$: page = "Sponsor";
+	$: page = "Alumini";
 
 	const options = [
 		{ name: "Supra", component: Supra },
 		{ name: "Sponsor", component: Sponsor },
-		// { name: "Alumini", component: Alumini },
+		{ name: "Alumini", component: Alumini },
 		{ name: "Contact", component: Contact },
 	];
 </script>

@@ -34,8 +34,67 @@
       "alumini": {
             "companies": [
                   {
-                        "name": "tesla",
-                        "data": []
+                        "company": "Ford Motor Company",
+                        "person": "Saurabh Aarya",
+                        "logo": "upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/1280px-Ford_logo_flat.svg.png",
+                        "color": "#fff",
+                        "position": "General Manager, Smart Mobility"
+                  },
+                  {
+                        "company": "Airbus India",
+                        "person": "Bhalchandra Gagang",
+                        "logo": "www.raisethebar.co.uk/wp-content/uploads/2019/04/Airbus-logo-3D_Blue.png",
+                        "color": "#fff",
+                        "position": "Engineer"
+                  },
+                  {
+                        "company": "Honda Motorcycle",
+                        "person": "Sridhar Viswanathan",
+                        "logo": "cdn-0.motorcycle-logos.com/wp-content/uploads/2016/10/Honda-motorcycle-logo.png",
+                        "color": "#fff",
+                        "position": "Group Vice President & Director"
+                  },
+                  {
+                        "company": "Ford Motor Company",
+                        "person": "Mehul Trivedi",
+                        "logo": "upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/1280px-Ford_logo_flat.svg.png",
+                        "color": "#fff",
+                        "position": "General Manager"
+                  },
+                  {
+                        "company": "Honda",
+                        "person": "Adesh Akmalik",
+                        "logo": "www.carlogos.org/car-logos/honda-logo-2100x1400.png",
+                        "color": "#fff",
+                        "position": "Senior Executive - Vehicle Research"
+                  },
+                  {
+                        "company": "TATA Motors",
+                        "person": "Avinash Gupta",
+                        "logo": "www.carlogos.org/logo/Tata-Group-logo-3840x2160.png",
+                        "color": "#fff",
+                        "position": "Senior General Manager"
+                  },
+                  {
+                        "company": "Fiat Chrysler Automobiles",
+                        "person": "Vinod Subramanian",
+                        "logo": "upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Fiat_Chrysler_Automobiles_logo.svg/1200px-Fiat_Chrysler_Automobiles_logo.svg.png",
+                        "color": "#fff",
+                        "position": "General Manager"
+                  },
+                  {
+                        "company": "Honda",
+                        "person": "Adesh Akmalik",
+                        "logo": "www.carlogos.org/car-logos/honda-logo-2100x1400.png",
+                        "color": "#fff",
+                        "position": "Project Manager"
+                  },
+                  {
+                        "company": "Cummins",
+                        "person": "Vikas Wahal",
+                        "logo": "cdn.freebiesupply.com/logos/large/2x/cummins-logo-png-transparent.png",
+                        "color": "#fff",
+                        "position": "General Manager"
                   }
             ]
       },

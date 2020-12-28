@@ -67,7 +67,6 @@
                         position: absolute;
                         pointer-events: none;
                         top: 0.5rem;
-                        color: #fff;
                         font-size: 1rem;
                         transition: all 0.3s ease;
                   }
