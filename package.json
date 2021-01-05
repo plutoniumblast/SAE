@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "sirv-cli": "1.0.6",
-    "svelte-lazy": "1.0.7"
+    "svelte-lazy": "1.0.8"
   }
 }
