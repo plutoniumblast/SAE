@@ -1,7 +1,7 @@
 <script>
     export let cpy;
     let card;
-    setTimeout(() => card.classList.toggle("active"), 5000);
+    setTimeout(() => card.classList.toggle("active"), 500);
     setInterval(
         () => card.classList.toggle("active"),
         (Math.random() * 5 + 3) * 1000

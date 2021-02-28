@@ -15,6 +15,8 @@
 	$: page = "Alumini";
 
 	const options = [
+		{ name: "Aero", component: Aero },
+		{ name: "Baja", component: Baja },
 		{ name: "Supra", component: Supra },
 		{ name: "Sponsor", component: Sponsor },
 		{ name: "Alumini", component: Alumini },
